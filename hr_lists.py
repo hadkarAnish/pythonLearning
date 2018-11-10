@@ -25,3 +25,17 @@ for i in range(N):
         eval("arr.{0}({1})".format(command, input_1[0]))
     else: 
         eval("arr.{0}()".format(command))
+
+
+#### better solution
+n = input()
+l = []
+for _ in range(n):
+    s = raw_input().split()
+    cmd = s[0]
+    args = s[1:]
+    if cmd !="print":
+        cmd += "("+ ",".join(args) +")"
+        eval("l."+cmd)
+    else:
+        print l
