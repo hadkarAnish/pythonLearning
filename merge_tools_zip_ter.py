@@ -2,7 +2,7 @@
 
 # The first line contains a single string denoting s. 
 # The second line contains an integer, k, denoting the length of each subsegment.
-# S, N = input(), int(input()) 
+S, N = input(), int(input()) 
 # Sample Input
 
 # AABCAAADA
